@@ -1,0 +1,70 @@
+.container1{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+	text-align: center;
+    padding-top: 30px;
+}
+.img{
+    width:100%;
+    height: 600px;
+    background-image: url("hero_2.jpg");
+    color: white;
+    margin-top: 0;
+    background-repeat:no repeat;
+    background-size: cover;
+    background-position: center;
+}
+body{
+    margin: 0%;
+}
+li{
+    display: inline;
+    padding-left: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: orange;
+  }
+.but{
+    width: 120px;
+    height: 50px;
+    background-color: darkorange;
+    color: white;
+}
+.del{
+ text-align: center;
+ padding-top: 50px;
+}
+.start{
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    height: 45px;
+    width: 150px;
+}
+h1{
+    font-weight: bolder;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.title{
+    margin-top: 0;
+}
+.container2{
+    margin-top: 30px;
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-left: 30px;
+}
+.svg{
+    background-color: darkorange;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
