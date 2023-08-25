@@ -4,6 +4,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>RESTAURENT</title>
         <link rel="stylesheet" href="home.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     </head>
     <body>
         <header>
@@ -23,8 +25,11 @@
                 <button class="but" onclick="window.open('contactus.html')"><b>Contact us</b></button>
             </div>
         </div>
+       
             <div class="del">
                 <h1>DELICIOUS FOOD</h1>
+                <img src="chevron-arrows-svgrepo-com.svg" class="leftarrow" onclick="back()">
+                <img src="rightarrow.svg" class="rightarrow" onclick="next()">
                 <p>Lorum ipsum dolor sit amet,consectetur adipisicing elit.Sapiente et sed quasi.</p>
                 <button class="start">GET STARTED</button>
             </div>
@@ -84,5 +89,38 @@
         <p></p>
         <p></p>
         <p></p>
+        <script>
+            var i=1;
+            var bgimg=document.querySelector(".img");
+            function back(){
+                if(i==1){
+                  bgimg.style.background="linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url('hero2.jpg')";
+                  bgimg.style.backgroundPosition="center";
+                  bgimg.style.backgroundRepeat="no repeat";
+                  bgimg.style.backgroundSize="cover";
+                  i++;
+                }
+                else{
+                  bgimg.style.background="linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url('hero1.jpg')";    
+                  bgimg.style.backgroundPosition="center";
+                  i--;
+                }
+                }
+            function next(){
+                if(i==1){
+                  bgimg.style.background="linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url('hero2.jpg')";
+                  bgimg.style.backgroundPosition="center";
+                  bgimg.style.backgroundRepeat="no repeat";
+                  bgimg.style.backgroundSize="cover";
+                  i++;
+                }
+                else{
+                  bgimg.style.background="linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url('hero1.jpg')";
+                  bgimg.style.backgroundPosition="center";
+                  i--;
+                }
+            }
+           
+        </script>
     </body>
 </html>

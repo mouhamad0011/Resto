@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>CONTACT US</title>
+</head>
+<body>
+    <header>
+        <div class="img">
+            <div class="container1">
+            <div class="title"><h1>FOODY</h1></div>
+            <div>
+                <ul class="nav">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="">Recipes</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">News</a></li>
+                  </ul>
+            </div>
+            <div>
+                <button class="but" onclick="window.open('contactus.html')"><b>Contact us</b></button>
+            </div>
+        </div>
+       
+            <div class="del">
+                <h1>DELICIOUS FOOD</h1>
+                <img src="chevron-arrows-svgrepo-com.svg" class="leftarrow" onclick="back()">
+                <img src="rightarrow.svg" class="rightarrow" onclick="next()">
+                <p>Lorum ipsum dolor sit amet,consectetur adipisicing elit.Sapiente et sed quasi.</p>
+                <button class="start">GET STARTED</button>
+            </div>
+        </div>
+        </header>
+        <main>
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form name="contactForm" onsubmit="return validateForm()" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <!-- Footer-->
+    <div class="grid-container3">
+        <h4 class=" subscribe-header"> Subscribe Newsletter </h4>
+        <p class="subscribe-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ex
+            temporibus
+            magni ipsam inventore
+            dolorum sunt, amet vel. </p>
+        <div class="email">
+            <input type="email" placeholder="Enter Email Address" class="email-address">
+            <button class=" subscribe-button"> SUBSCRIBE </button>
+        </div>
+    </div>
+
+    <div class="grid-outline-footer">
+        <div class="footer-content1">
+            <h3 class="abouts-us-footer"> About Us </h3>
+            <p class="description-content1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+                et
+                dolor blanditiis consequuntur
+                ex voluptates perspiciatis omnis unde minima expedita. </p>
+            <i class="social-icons">
+                <i class="fa-brands fa-twitter" style="color: #ff4d00;"></i>
+                <i class="fa-brands fa-facebook-f" style="color: #ff4d00;"></i>
+                <i class="fa-brands fa-linkedin-in" style="color: #ff4d00;"></i>
+                <i class="fa-brands fa-instagram" style="color: #ff4d00;"></i>
+            </i>
+        </div>
+        <div class="footer-content2">
+            <h3 class="opening-hours"> Opening Hours </h3>
+            <p class="footer1"> Sunday-Thursday </p>
+            <p class="footer2"> 5AM - 10PM </p>
+
+            <h3 class="contact-info"> Contact Info </h3>
+            <p class="footer1"> Adresss: </p>
+            <p class="footer2"> 34 Street Name, City Name Here, United States </p>
+            <p class="footer1"> Phone: </p>
+            <p class="footer2"> +1 242 4942 290 </p>
+            <p class="footer1"> Email: </p>
+            <p class="footer2"> info@yourdomain.com </p>
+        </div>
+
+        <div class="footer-content3">
+            <h3 class="quick-links"> Quick Links </h3>
+            <a class="links" href="http://">About</a> <br>
+            <a class="links" href="http://"> Terms of Use </a> <br>
+            <a class="links" href="http://"> Disclaimers</a> <br>
+            <a class="links" href="contactus.html"> Contact </a> <br>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p> Copyright &copy2023 All rights reserved </p>
+    </div>
+        </footer>
+        <script>
+           function validateForm() {
+    var name = document.forms["contactForm"]["name"].value;
+    var email = document.forms["contactForm"]["email"].value;
+    var message = document.forms["contactForm"]["message"].value;
+    
+    var errorMessages = [];
+    
+    if(!isValidName(name)) {
+        errorMessages.push("Name should contain only letters.");
+    }
+
+    if(email.trim() === "") {
+        errorMessages.push("Email field is required.");
+    } 
+    else if (!isValidEmail(email)) {
+        errorMessages.push("Invalid email address.");
+    }
+
+    if (message.trim() === "") {
+        errorMessages.push("Message field is required.");
+    }
+
+    if (errorMessages.length > 0) {
+        alert(errorMessages.join("\n"));
+        return false;
+    }
+}
+
+function isValidName(name) {
+    var namePattern = /^[A-Za-z\s]+$/;
+    return namePattern.test(name.trim());
+}
+
+function isValidEmail(email) {
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+/;
+    return emailPattern.test(email);
+}
+var i=1;
+            var bgimg=document.querySelector(".img");
+            function back(){
+                if(i==1){
+                  bgimg.style.background="linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url('hero2.jpg')";
+                  bgimg.style.backgroundPosition="center";
+                  bgimg.style.backgroundRepeat="no repeat";
+                  bgimg.style.backgroundSize="cover";
+                  i++;
+                }
+                else{
+                  bgimg.style.background="linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url('hero1.jpg')";    
+                  bgimg.style.backgroundPosition="center";
+                  i--;
+                }
+                }
+            function next(){
+                if(i==1){
+                  bgimg.style.background="linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url('hero2.jpg')";
+                  bgimg.style.backgroundPosition="center";
+                  bgimg.style.backgroundRepeat="no repeat";
+                  bgimg.style.backgroundSize="cover";
+                  i++;
+                }
+                else{
+                  bgimg.style.background="linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url('hero1.jpg')";
+                  bgimg.style.backgroundPosition="center";
+                  i--;
+                }
+            }
+        </script>
+</body>
+</html>

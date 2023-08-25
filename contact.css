@@ -1,0 +1,334 @@
+.container1{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+	text-align: center;
+    padding-top: 30px;
+}
+.img{
+    width: 100vw; 
+    height: 100vh;
+    background:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url("hero1.jpg");
+    color: white;
+    margin-top: 0;
+    background-repeat:no repeat;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 0 95%);
+     
+    
+}
+body{
+    margin: 0%;
+    font-family:'Open Sans';
+}
+li{
+    display: inline;
+    padding-left: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: orange;
+  }
+.but{
+    width: 120px;
+    height: 50px;
+    background-color: darkorange;
+    color: white;
+}
+.del{
+    text-align: center;
+    padding-top: 100px;
+   }
+   .start{
+       border: 2px solid white;
+       background-color: transparent;
+       color: white;
+       height: 45px;
+       width: 150px;
+   }
+   .del h1{
+       font-weight:bolder;
+       font-family:'Open Sans';
+   }
+   *{
+       font-family:'Open Sans';
+   }
+   @font-face { 
+       font-family:'Open Sans'; 
+       src: url('OpenSans-CondBold.ttf'); 
+   } 
+   .title h1{
+       font-weight: bolder;
+       margin: 0;
+   }
+   header{
+       display: flex;
+       background-color:rgb(223, 240, 245); 
+   }
+   .leftarrow{
+       float: left;
+   }
+   .rightarrow{
+       float: right;
+   }
+main{
+    margin-bottom: 200px;
+    height: 700px;
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 0 95%);
+    background-color: rgb(223, 240, 245);  
+}
+   /* Add your existing CSS styles here */
+
+.contact-form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+.contact-form button[type="submit"] {
+    background-color: darkorange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: orange;
+}
+
+/* Additional styling for form validation */
+.contact-form input:invalid,
+.contact-form textarea:invalid {
+    border-color: #ff0000;
+}
+
+/* Footer */
+.grid-container3 {
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.subscribe-header,
+.subscribe-description {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.subscribe-header {
+    font-weight: bold;
+}
+
+.subscribe-description {
+    line-height: 2;
+    color: rgb(153, 153, 153);
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+}
+
+.email-address {
+    height: 36px;
+    width: 300px;
+    align-items: flex-start;
+    font-size: medium;
+    padding-left: 20px;
+    border: 1px solid rgb(153, 153, 153);
+}
+
+.subscribe-button {
+    align-items: flex-end;
+    font-size: medium;
+    margin-left: 40px;
+    height: 40px;
+    width: 200px;
+    background-color: darkorange;
+    color: white;
+    border: none;
+}
+
+.grid-outline-footer {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 50px;
+}
+
+.footer-content1 {
+    margin-left: 150px;
+    margin-right: 50px;
+    width: 300px;
+}
+
+.description-content1 {
+    margin-bottom: 50px;
+    color: rgb(153, 153, 153);
+    line-height: 1.5;
+}
+
+.social-icons {
+    letter-spacing: 10px;
+}
+
+.footer-content2 {
+    margin-right: 150px;
+}
+
+.footer1 {
+    margin-bottom: 0;
+}
+
+.footer2 {
+    margin-top: 0;
+    padding-top: 5px;
+    color: rgb(153, 153, 153);
+}
+
+.contact-info {
+    padding-top: 20px;
+}
+
+.quick-links {
+    margin-bottom: 10px;
+}
+
+.links {
+    text-decoration: none;
+    color: darkorange;
+    line-height: 2;
+}
+
+.copyright {
+    padding-top: 70px;
+    padding-left: 400px;
+    padding-bottom: 50px;
+    color: rgb(153, 153, 153);
+}
+@media (max-width: 428px) {
+    .container1 {
+        grid-template-columns: 100%;
+    }
+    header{
+        height: 800px;
+    }
+    .but{
+        background-color: transparent;
+        border: none;
+        font-size: larger;
+    }
+    .but:hover{
+        color: orange;
+      }
+    ul{
+        padding-left: 0px;
+    }
+    li{
+        padding-left: 5px;
+    }
+    .img {
+        height: 100%;
+    }
+    .container2 {
+        margin-top: 0;
+        height:1100px;
+        width: 100%;
+        justify-content: start;
+    }
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .therestaurant p{
+        font-size: large;
+    }
+    .littlecont{
+        height: fit-content;
+    }
+    .svg {
+        width: 70px;
+        height: 70px;
+    }
+    .description{
+        font-size: larger;
+    }
+    .descriptionP{
+        font-size: large;
+    }
+    .one{
+        width: 300px;
+    }
+    .two{
+        width: 300px;
+        height: 300px;
+    }
+    .twoimg{
+        gap:20px;
+    }
+}
+@media (min-width:477px) and (max-width: 835px) {
+    .container1 {
+        grid-template-columns: auto auto auto; 
+    }
+    .container2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding-left: 30px;
+        padding-right: 30px;
+        height: 650px;
+        clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
+        background-color: rgb(245, 245, 245);
+        justify-items: center;
+    }
+    .img {
+        height: 500px; 
+    }
+    .fourimg{
+        display:grid;
+        grid-template-columns: repeat(1,100%);
+        align-items: center;
+    }
+    .twoimg{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .two{
+        height: 300px;
+        width: 380px;
+    }
+    .one{
+        height: 400px;
+        width: 500px;
+    }
+}
