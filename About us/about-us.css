@@ -1,0 +1,494 @@
+/* Header */
+.container1 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.img {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url("../hero1.jpg");
+    color: white;
+    margin-top: 0;
+    background-repeat: no repeat;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 0 95%);
+    background-color: #f5f5f5;
+
+}
+
+body {
+    margin: 0%;
+    font-family: 'Open Sans';
+}
+
+li {
+    display: inline;
+    padding-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: orange;
+}
+
+.but {
+    width: 120px;
+    height: 50px;
+    background-color: darkorange;
+    color: white;
+}
+
+.del {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.start {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    height: 45px;
+    width: 150px;
+}
+
+.del h1 {
+    font-weight: bolder;
+    font-family: 'Open Sans';
+}
+
+* {
+    font-family: 'Open Sans';
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans-CondBold.ttf');
+}
+
+.title h1 {
+    font-weight: bolder;
+    margin: 0;
+}
+
+header {
+    display: flex;
+}
+
+.leftarrow {
+    float: left;
+}
+
+.rightarrow {
+    float: right;
+}
+
+/* About us */
+.about-us-container {
+    margin-left: 50px;
+}
+
+.about-us-grid {
+    display: flex;
+    grid-template-columns: auto auto;
+    gap: 80px;
+}
+
+.about-us-description {
+    padding-top: 10px;
+    font-size: large;
+    line-height: 1.5;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.spacing {
+    height: 50px;
+}
+
+/* Our Master Chef */
+.meet-the-chef-container {
+    background-color: rgb(245, 245, 245);
+}
+
+.angled-section {
+    height: 100px;
+    background-color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
+}
+
+.meet-the-chef-grid {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    display: flex;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.chef-image {
+    height: 500px;
+    width: 430px;
+}
+
+.chef-name {
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.chef-title {
+    font-size: medium;
+    text-align: center;
+}
+
+.chef-social-icons {
+    margin-left: 170px;
+    letter-spacing: 5px;
+}
+
+.reversed-angled-section {
+    height: 150px;
+    background-color: white;
+    clip-path: polygon(100% 100%, 100% 0%, 100% 0%, 0 100%);
+}
+
+/* FAQ option 1*/
+/*.angled-section {
+    height: 100px;
+    background-color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
+}
+
+.faq-container {
+    background-color: rgb(245, 245, 245);
+    margin: 0;
+    padding: 0;
+    padding-bottom: 150px;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+}
+
+.about-us-hr {
+    width: 6%;
+    background-color: darkorange;
+    height: 2px;
+    border-width: 0;
+}
+
+.faq {
+    width: 50%;
+    margin: auto auto;
+    padding: 0;
+    background-color: rgb(245, 245, 245);
+}
+
+.h2-title {
+    font-weight: 700;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.accordion {
+    margin: 5px 0px;
+    background-color: #fff;
+}
+
+.question {
+    font-size: 18px;
+    background-color: #ddd;
+    margin: 0px;
+    padding: 15px;
+}
+
+.answer {
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px 15px;
+    line-height: 2;
+    max-height: 0px;
+    overflow: hidden;
+    transition: 2s;
+}
+
+.opener {
+    font-size: 25px;
+    float: right;
+    line-height: 0.8;
+    cursor: pointer;
+} */
+
+/* FAQ option 2 */
+
+* {
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.faq-hr {
+    width: 12%;
+    background-color: darkorange;
+    height: 2px;
+    border-width: 0;
+}
+
+.h2-title {
+    font-weight: 700;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 4rem;
+    width: 48rem;
+}
+
+.about-us-hr {
+    width: 6%;
+    background-color: darkorange;
+    height: 2px;
+    border-width: 0;
+}
+
+.accordion .accordion-item {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion .accordion-item button[aria-expanded='true'] {
+    border-bottom: 1px solid darkorange;
+}
+
+.accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+    cursor: pointer;
+    color: darkorange;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+    cursor: pointer;
+    color: darkorange;
+    border: 1px solid darkorange;
+}
+
+.accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+}
+
+.accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+}
+
+.accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+}
+
+.accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+}
+
+.accordion button[aria-expanded='true'] {
+    color: darkorange;
+}
+
+.accordion button[aria-expanded='true'] .icon::after {
+    width: 0;
+}
+
+.accordion button[aria-expanded='true']+.accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2em 0;
+}
+
+/*Maps*/
+.grid-map {
+    background-color: #f5f5f5;
+}
+
+.mapouter {
+    margin-left: 250px;
+    width: 70%;
+    height: 400px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 90%;
+    height: 400px;
+}
+
+.gmap_iframe {
+    height: 400px !important;
+}
+
+/* Footer */
+.grid-container3 {
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.subscribe-header,
+.subscribe-description {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.subscribe-header {
+    font-weight: bold;
+}
+
+.subscribe-description {
+    line-height: 2;
+    color: rgb(153, 153, 153);
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+}
+
+.email-address {
+    height: 36px;
+    width: 300px;
+    align-items: flex-start;
+    font-size: medium;
+    padding-left: 20px;
+    border: 1px solid rgb(153, 153, 153);
+}
+
+.subscribe-button {
+    align-items: flex-end;
+    font-size: medium;
+    margin-left: 40px;
+    height: 40px;
+    width: 200px;
+    background-color: darkorange;
+    color: white;
+    border: none;
+}
+
+.grid-outline-footer {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 50px;
+}
+
+.footer-content1 {
+    margin-left: 150px;
+    margin-right: 50px;
+    width: 300px;
+}
+
+.description-content1 {
+    margin-bottom: 50px;
+    color: rgb(153, 153, 153);
+    line-height: 1.5;
+}
+
+.social-icons {
+    letter-spacing: 10px;
+}
+
+.footer-content2 {
+    margin-right: 150px;
+}
+
+.footer1 {
+    margin-bottom: 0;
+}
+
+.footer2 {
+    margin-top: 0;
+    padding-top: 5px;
+    color: rgb(153, 153, 153);
+}
+
+.contact-info {
+    padding-top: 20px;
+}
+
+.quick-links {
+    margin-bottom: 10px;
+}
+
+.links {
+    text-decoration: none;
+    color: darkorange;
+    line-height: 2;
+}
+
+.copyright {
+    padding-top: 70px;
+    padding-left: 400px;
+    padding-bottom: 50px;
+    color: rgb(153, 153, 153);
+}

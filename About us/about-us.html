@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="about-us.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header-->
+    <header>
+        <div class="img">
+            <div class="container1">
+                <div class="title">
+                    <h1>FOODY</h1>
+                </div>
+                <div>
+                    <ul class="nav">
+                        <li><a href="../home.html">Home</a></li>
+                        <li><a href="">Recipes</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="About us/about-us.html">About</a></li>
+                        <li><a href="">News</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <button class="but" onclick="window.open('../contactus.html')"><b>Contact us</b></button>
+                </div>
+            </div>
+            <div class="del">
+                <h1>DELICIOUS FOOD</h1>
+                <img src="../chevron-arrows-svgrepo-com.svg" class="leftarrow" onclick="back()">
+                <img src="../rightarrow.svg" class="rightarrow" onclick="next()">
+                <p>Lorum ipsum dolor sit amet,consectetur adipisicing elit.Sapiente et sed quasi.</p>
+                <button class="start">GET STARTED</button>
+            </div>
+        </div>
+
+
+        </div>
+    </header>
+
+    <div class="spacing"> </div>
+
+    <div class="about-us-container">/
+        <hr class="about-us-hr">
+        <h2 class="h2-title"> About us </h2>
+        <div class="about-us-grid">
+            <div class="image-container"><img class="about-us-image" src="../images/Quotes restaurant.jpg" alt=""></div>
+            <p class="about-us-description"> Welcome to Foody's, where culinary excellence meets warm hospitality.
+                <br><br>
+
+                Whether you're joining us for a romantic dinner, a casual lunch with friends, or a special celebration,
+                our inviting ambiance and attentive staff are here to make your visit truly exceptional. <br> <br>
+
+                Our commitment to quality extends beyond our cuisine. We look forward to serving you and sharing the
+                joy of food, culture, and community. Come savor the moment with us at Foody's.
+            </p> <br> <br>
+        </div>
+    </div>
+
+    <div class="spacing"> </div>
+
+    <!--Our Master Chef-->
+    <div class="meet-the-chef-container">
+        <div class="angled-section"></div>
+        <hr class="about-us-hr">
+        <h2 class="h2-title"> Our Master Chef</h2>
+        <div class="meet-the-chef-grid">
+            <div class="chef-div">
+                <img class="chef-image" src="../images/chef-1.jpg.webp" alt="">
+                <p class="chef-name"> John Oliver</p>
+                <p class="chef-title"> Head Chef </p>
+                <i class="chef-social-icons">
+                    <i class="fa-brands fa-twitter" style="color: #ff4d00;"></i>
+                    <i class="fa-brands fa-facebook-f" style="color: #ff4d00;"></i>
+                    <i class="fa-brands fa-linkedin-in" style="color: #ff4d00;"></i>
+                    <i class="fa-brands fa-instagram" style="color: #ff4d00;"></i>
+                </i>
+            </div>
+            <div class="chef-div">
+                <img class="chef-image" src="../images/chef-2.jpg.webp" alt="">
+                <p class="chef-name"> Rachael Wilson </p>
+                <p class="chef-title"> Pastry Chef </p>
+                <i class="chef-social-icons">
+                    <i class="fa-brands fa-twitter" style="color: #ff4d00;"></i>
+                    <i class="fa-brands fa-facebook-f" style="color: #ff4d00;"></i>
+                    <i class="fa-brands fa-linkedin-in" style="color: #ff4d00;"></i>
+                    <i class="fa-brands fa-instagram" style="color: #ff4d00;"></i>
+                </i>
+            </div>
+            <div class="chef-div">
+                <img class="chef-image" src="../images/chef-3.jpg" alt="">
+                <p class="chef-name"> Simon Anderson </p>
+                <p class="chef-title"> Sous-Chef </p>
+                <i class="chef-social-icons">
+                    <i class="fa-brands fa-twitter" style="color: #ff4d00;"></i>
+                    <i class="fa-brands fa-facebook-f" style="color: #ff4d00;"></i>
+                    <i class="fa-brands fa-linkedin-in" style="color: #ff4d00;"></i>
+                    <i class="fa-brands fa-instagram" style="color: #ff4d00;"></i>
+                </i>
+            </div>
+        </div>
+        <div class="reversed-angled-section"> </div>
+    </div>
+
+    <!-- FAQ option1-->
+    <!-- <div class="faq-container">
+        <div class="angled-section"></div>
+        <div class="faq">
+            <hr class="about-us-hr">
+            <h2 class="h2-faq">Frequently Asked Questions</h2>
+            <div class="accordion">
+                <p class="question"> What is the restaurant's cuisine? <span onclick='faq(this)' class="opener">+</span>
+                </p>
+                <p class="answer"> Our restaurant offers a diverse menu with a focus on Italian and Japanese cuisine,
+                    featuring a wide range of delicious dishes to satisfy various tastes.</p>
+            </div>
+
+            <div class="accordion">
+                <p class="question"> Do I need a reservation to dine at your restaurant? <span onclick='faq(this)'
+                        class="opener">+</span></p>
+                <p class="answer"> While we do accept walk-ins, we recommend making a reservation, especially during
+                    peak dining hours, to ensure you have a table when you arrive. You can easily book a table on our
+                    website or by calling us. </p>
+            </div>
+
+            <div class="accordion">
+                <p class="question"> Is there a gluten-free/vegan/vegetarian menu available? <span onclick='faq(this)'
+                        class="opener">+</span></p>
+                <p class="answer"> Yes, we offer gluten-free, vegan, and vegetarian options on our menu. Please let your
+                    server know about any dietary restrictions, and they'll be happy to assist you. </p>
+            </div>
+
+            <div class="accordion">
+                <p class="question"> Do you offer takeout and delivery services? <span onclick='faq(this)'
+                        class="opener">+</span></p>
+                <p class="answer"> Yes, we offer both takeout and delivery services. You can place your order online
+                    through our website or by calling us directly. </p>
+            </div>
+
+            <div class="accordion">
+                <p class="question"> Can I host private events or parties at your restaurant? <span onclick='faq(this)'
+                        class="opener">+</span></p>
+                <p class="answer"> Absolutely! We have private dining areas and catering options available for events,
+                    parties, and special occasions. Contact us for more information and to discuss your specific needs.
+                </p>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- FAQ option 2-->
+    <div class="container">
+        <hr class="faq-hr">
+        <h2 class="h2-title">Frequently Asked Questions</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false">
+                    <span class="accordion-title"> What is the restaurant's cuisine? </span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Our restaurant offers a diverse menu with a focus on Italian and Japanese cuisine, featuring a
+                        wide range of delicious dishes to satisfy various tastes.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-2" aria-expanded="false">
+                    <span class="accordion-title"> Do I need a reservation to dine at your restaurant? </span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        While we do accept walk-ins, we recommend making a reservation, especially during peak
+                        dining hours, to ensure you have a table when you arrive. You can easily book a table on our
+                        website or by calling us.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-3" aria-expanded="false">
+                    <span class="accordion-title"> Is there a gluten-free/vegan/vegetarian menu available? </span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Yes, we offer gluten-free, vegan, and vegetarian options on our menu. Please let your server
+                        know about any dietary restrictions, and they'll be happy to assist you.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-4" aria-expanded="false">
+                    <span class="accordion-title"> Do you offer takeout and delivery services? </span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Yes, we offer both takeout and delivery services. You can place your order online through
+                        our website or by calling us directly.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false">
+                    <span class="accordion-title"> Can I host private events or parties at your restaurant? </span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>
+                        Absolutely! We have private dining areas and catering options available for events, parties,
+                        and special occasions. Contact us for more information and to discuss your specific needs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Map-->
+    <div class="grid-map">
+        <div class="angled-section"></div>
+        <hr class="about-us-hr">
+        <h2 class="h2-title"> Where to find us? </h2>
+        <div id="map">
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+                        marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?width=400&amp;height=400&amp;hl=en&amp;q=beirut resta&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                        href="https://gachanox.io/">Gacha Nox Download</a></div>
+            </div>
+        </div>
+        <div class="reversed-angled-section"></div>
+    </div>
+
+    <!--Footer-->
+    <div class="grid-container3">
+        <h4 class=" subscribe-header"> Subscribe Newsletter </h4>
+        <p class="subscribe-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ex
+            temporibus
+            magni ipsam inventore
+            dolorum sunt, amet vel. </p>
+        <div class="email">
+            <input type="email" placeholder="Enter Email Address" class="email-address">
+            <button class=" subscribe-button"> SUBSCRIBE </button>
+        </div>
+    </div>
+
+    <div class="grid-outline-footer">
+        <div class="footer-content1">
+            <h3 class="abouts-us-footer"> About Us </h3>
+            <p class="description-content1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus et
+                dolor blanditiis consequuntur ex voluptates perspiciatis omnis unde minima expedita. </p>
+            <i class="social-icons">
+                <i class="fa-brands fa-twitter" style="color: #ff4d00;"></i>
+                <i class="fa-brands fa-facebook-f" style="color: #ff4d00;"></i>
+                <i class="fa-brands fa-linkedin-in" style="color: #ff4d00;"></i>
+                <i class="fa-brands fa-instagram" style="color: #ff4d00;"></i>
+            </i>
+        </div>
+
+        <div class="footer-content2">
+            <h3 class="opening-hours"> Opening Hours </h3>
+            <p class="footer1"> Sunday-Thursday </p>
+            <p class="footer2"> 5AM - 10PM </p>
+
+            <h3 class="contact-info"> Contact Info </h3>
+            <p class="footer1"> Adresss: </p>
+            <p class="footer2"> 34 Street Name, City Name Here, United States </p>
+            <p class="footer1"> Phone: </p>
+            <p class="footer2"> +1 242 4942 290 </p>
+            <p class="footer1"> Email: </p>
+            <p class="footer2"> info@yourdomain.com </p>
+        </div>
+
+        <div class="footer-content3">
+            <h3 class="quick-links"> Quick Links </h3>
+            <a class="links" href="About us/about-us.html"> About </a> <br>
+            <a class="links" href="http://"> Terms of Use </a> <br>
+            <a class="links" href="http://"> Disclaimers </a> <br>
+            <a class="links" href="http://"> Contact </a> <br>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p> Copyright &copy2023 All rights reserved </p>
+    </div>
+
+    <script>
+        var i = 1;
+        var bgimg = document.querySelector(".img");
+        function back() {
+            if (i == 1) {
+                bgimg.style.background = "linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url('../hero2.jpg')";
+                bgimg.style.backgroundPosition = "center";
+                bgimg.style.backgroundRepeat = "no repeat";
+                bgimg.style.backgroundSize = "cover";
+                i++;
+            }
+            else {
+                bgimg.style.background = "linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url('../hero1.jpg')";
+                bgimg.style.backgroundPosition = "center";
+                i--;
+            }
+        }
+        function next() {
+            if (i == 1) {
+                bgimg.style.background = "linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url('../hero2.jpg')";
+                bgimg.style.backgroundPosition = "center";
+                bgimg.style.backgroundRepeat = "no repeat";
+                bgimg.style.backgroundSize = "cover";
+                i++;
+            }
+            else {
+                bgimg.style.background = "linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url('../hero1.jpg')";
+                bgimg.style.backgroundPosition = "center";
+                i--;
+            }
+        }
+
+    </script>
+    <script src="about-us.js"> </script>
+</body>
+
+</html>
