@@ -241,7 +241,7 @@
 }
 
 /* For Tablets */
-@media (min-width:477px) and (max-width: 834px) {
+@media (min-width:477px) and (max-width: 835px) {
     .container1 {
         grid-template-columns: auto auto auto;
     }
