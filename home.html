@@ -95,9 +95,8 @@
                 </div>
             </div>
         </div>
-        <p></p>
-        <p></p>
-        <p></p>
+
+        <div class="restaurant-special-menu-spacing"> </div>
 
         <div class="grid-outline1">
             <hr>
@@ -222,6 +221,102 @@
 
         <div class="our-menu-and-testimonials-spacing"> </div>
 
+        <!-- Alaa's part -->
+
+        <div class="Testimonial-page">
+            <div>
+                <hr class="divider-blog">
+                <h1 class="TestimonialH1">TESTIMONIAL</h1>
+                <div class="scroll-container">
+                    <div class="content">
+                        <div class="scroll-wrapper">
+                            <div class="div_Testimonial">
+                                <!-- Testimonial 1 content -->
+                                <p class="testimonial-description">“Far far away, behind the word mountains, far from
+                                    the countries Vokalia and
+                                    Consonantia,
+                                    there live the blind texts. Separated they live in Bookmarksgrove right at the coast
+                                    of the Semantics, a large language ocean."
+                                </p>
+                                <div class="profile">
+                                    <div class="profile-content">
+                                        <img src="../Resto/images/chef-3.jpg" alt="chef" class="profile-image">
+                                        <div class="profile-text">
+                                            <p>Mike Richardson</p>
+                                            <p>CEO, XYZ Company</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="div_Testimonial">
+                                <!-- Testimonial 2 content -->
+                                <p class="testimonial-description">“Far far away, behind the word mountains, far from
+                                    the countries Vokalia and
+                                    Consonantia,
+                                    there live the blind texts. Separated they live in Bookmarksgrove right at the coast
+                                    of the Semantics, a large language ocean."
+                                </p>
+                                <div class="profile">
+                                    <div class="profile-content">
+                                        <img src="../Resto/images/chef-1.jpg.webp" alt="chef" class="profile-image">
+                                        <div class="profile-text">
+                                            <p>John Smith</p>
+                                            <p>CTO, ABC Company</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-container">
+            <div class="angled-section-blog"></div>
+            <hr class="divider-blog">
+            <h1 class="Blog-title">BLOG</h1>
+            <div class="blog-div">
+                <div class="blog-div1">
+                    <img class="blog-image" src="special-menu1.jpg" alt="pasta">
+                    <p class="OrrangeP">How To Cook Pasta</p>
+                    <p class="GrayP"> <i style="font-size:15px" class="fa">&#xf073;</i> April 22, 2018</p>
+                    <p class="GrayT">Far far away, behind the word mountains, far from the countries Vokalia and
+                        Consonantia, there live the blind texts.</p>
+                    <button class="blog-button">READ MORE</button>
+                </div>
+                <div class="blog-div2">
+                    <img class="blog-image" src="special-menu2.jpg" alt="pasta2">
+                    <p class="OrrangeP">How To Cook Pasta</p>
+                    <p class="GrayP"> <i style="font-size:15px" class="fa">&#xf073;</i> April 22, 2018</p>
+                    <p class="GrayT">Far far away, behind the word mountains, far from the countries Vokalia and
+                        Consonantia, there live the blind texts.</p>
+                    <button class="blog-button">READ MORE</button>
+                </div>
+            </div>
+            <div class="reversed-angled-section"></div>
+        </div>
+
+        <div class="Dinner-div">
+            <hr class="divider">
+            <h1 class="TestimonialH1">Review</h1>
+            <form class="Dinner-Form">
+                <p> How was Your Dinner?</p>
+                <div class="Review-Container">
+                    <div class="stars-container">
+                        <div class="star-rating" onclick="rate(1)" id="1"></div>
+                        <div class="star-rating" onclick="rate(2)" id="2"></div>
+                        <div class="star-rating" onclick="rate(3)" id="3"></div>
+                        <div class="star-rating" onclick="rate(4)" id="4"> </div>
+                        <div class="star-rating" onclick="rate(5)" id="5"></div>
+                    </div>
+                    <br>
+                    <input type="text" placeholder="Enter your answer"><br>
+                    <button class="button-dinner">Submit</button>
+                </div>
+            </form>
+        </div>
+
         <!-- Footer-->
         <div class="grid-container3">
             <h4 class=" subscribe-header"> Subscribe Newsletter </h4>
@@ -238,7 +333,8 @@
         <div class="grid-outline-footer">
             <div class="footer-content1">
                 <h3 class="abouts-us-footer"> About Us </h3>
-                <p class="description-content1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+                <p class="description-content1"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus
                     et
                     dolor blanditiis consequuntur
                     ex voluptates perspiciatis omnis unde minima expedita. </p>
@@ -307,6 +403,78 @@
                     bgimg.style.backgroundPosition = "center";
                     i--;
                 }
+            }
+
+            const scrollContainer = document.querySelector('.scroll-container');
+            const scrollWrapper = document.querySelector('.scroll-wrapper');
+            const testimonials = document.querySelectorAll('.div_Testimonial');
+            let currentIndex = 0;
+
+            scrollContainer.addEventListener('click', (event) => {
+                const rect = scrollContainer.getBoundingClientRect();
+                const clickX = event.clientX - rect.left;
+                const containerWidth = rect.width;
+
+                if (clickX < containerWidth / 2) {
+                    showPrevious();
+                } else {
+                    showNext();
+                }
+            });
+
+            function showPrevious() {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    scrollToTestimonial(currentIndex);
+                }
+            }
+
+            function showNext() {
+                if (currentIndex < testimonials.length - 1) {
+                    currentIndex++;
+                    scrollToTestimonial(currentIndex);
+                }
+            }
+
+            function scrollToTestimonial(index) {
+                const testimonialWidth = testimonials[index].offsetWidth;
+                const offset = testimonialWidth * index;
+                scrollWrapper.style.transform = `translateX(-${offset}px)`;
+            }
+
+            document.addEventListener("DOMContentLoaded", function () {
+                const reviewInput = document.querySelector(".Dinner-Form input");
+                const submitReviewButton = document.querySelector(".button-dinner");
+                let allReviews = [];
+
+                submitReviewButton.addEventListener("click", function (event) {
+                    event.preventDefault();
+
+                    const reviewText = reviewInput.value.trim();
+
+                    if (reviewText !== "") {
+                        allReviews.push(reviewText);
+                        reviewInput.value = ""; // Clear the input field
+                        displayAllReviews();
+                    }
+                });
+
+                function displayAllReviews() {
+                    if (allReviews.length > 0) {
+                        const reviewsMessage = "All Reviews:\n" + allReviews.join("\n");
+                        alert(reviewsMessage);
+                    } else {
+                        alert("No reviews yet.");
+                    }
+                }
+            });
+
+
+            function rate(stars) {
+
+                const starElement = document.getElementById(stars);
+
+                starElement.style.color = 'gold';
             }
 
         </script>
